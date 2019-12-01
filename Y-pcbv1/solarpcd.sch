@@ -193,7 +193,7 @@ BATT_N
 Wire Wire Line
 	8750 5000 8600 5000
 $Comp
-L power:GND #PWR0108
+L solarpcd-rescue:GND-power #PWR0108
 U 1 1 5DB779CC
 P 9150 5300
 F 0 "#PWR0108" H 9150 5050 50  0001 C CNN
@@ -204,7 +204,7 @@ F 3 "" H 9150 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0110
+L solarpcd-rescue:+3V3-power #PWR0110
 U 1 1 5DB87DA5
 P 8750 5200
 F 0 "#PWR0110" H 8750 5050 50  0001 C CNN
@@ -242,7 +242,7 @@ SDA1
 Wire Wire Line
 	7650 6600 7400 6600
 $Comp
-L power:GND #PWR0111
+L solarpcd-rescue:GND-power #PWR0111
 U 1 1 5DB1FC5C
 P 5800 6900
 F 0 "#PWR0111" H 5800 6650 50  0001 C CNN
@@ -284,7 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 6100 5800 6100
 $Comp
-L power:+3V3 #PWR0112
+L solarpcd-rescue:+3V3-power #PWR0112
 U 1 1 5DB2D712
 P 5800 6100
 F 0 "#PWR0112" H 5800 5950 50  0001 C CNN
@@ -335,7 +335,7 @@ COIL_P
 Wire Wire Line
 	8750 5400 8600 5400
 $Comp
-L power:GND #PWR0113
+L solarpcd-rescue:GND-power #PWR0113
 U 1 1 5DB7ADC7
 P 7200 5300
 F 0 "#PWR0113" H 7200 5050 50  0001 C CNN
@@ -350,7 +350,7 @@ VSOLAR
 Wire Wire Line
 	4500 6300 4500 6400
 $Comp
-L power:GND #PWR0114
+L solarpcd-rescue:GND-power #PWR0114
 U 1 1 5DB6D916
 P 4500 6400
 F 0 "#PWR0114" H 4500 6150 50  0001 C CNN
@@ -367,12 +367,12 @@ Wire Wire Line
 Text GLabel 10900 4700 2    50   Output ~ 0
 BATT_P
 $Comp
-L symbols:MSS1P4-M3_89A D30
+L solarpcd-rescue:MSS1P4-M3_89A-symbols D30
 U 1 1 5DB46377
 P 950 6200
 F 0 "D30" H 1250 6465 50  0000 C CNN
 F 1 "MSS1P4-M3_89A" H 1250 6374 50  0000 C CNN
-F 2 "MICROSMP" H 1350 6350 50  0001 L BNN
+F 2 "solarpcb:MICROSMP" H 1350 6350 50  0001 L BNN
 F 3 "https://www.vishay.com/docs/89019/mss1p4.pdf" H 1350 6250 50  0001 L BNN
 F 4 "Vishay MSS1P4-M3/89A SMT Schottky Diode, 40V 1A, 2-Pin uSMP" H 1350 6150 50  0001 L BNN "Description"
 F 5 "" H 1350 6050 50  0001 L BNN "Height"
@@ -403,7 +403,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 5300 9150 5300
 $Comp
-L symbols:U.FL-R-SMT-1 J2
+L solarpcd-rescue:U.FL-R-SMT-1-symbols J2
 U 1 1 5DC33039
 P 6950 8300
 F 0 "J2" H 6842 8565 50  0000 C CNN
@@ -443,7 +443,7 @@ Connection ~ 7000 8950
 Wire Wire Line
 	7000 8950 7000 8900
 $Comp
-L power:GND #PWR0115
+L solarpcd-rescue:GND-power #PWR0115
 U 1 1 5DC4B261
 P 6800 9000
 F 0 "#PWR0115" H 6800 8750 50  0001 C CNN
@@ -476,12 +476,12 @@ Wire Wire Line
 Text GLabel 7550 5400 0    50   BiDi ~ 0
 COIL_N
 $Comp
-L Switch:SW_SPDT U3
+L solarpcd-rescue:SW_SPDT-Switch U3
 U 1 1 5DC81E30
 P 10550 4600
 F 0 "U3" H 10550 4885 50  0000 C CNN
 F 1 "SW_SPDT" H 10550 4794 50  0000 C CNN
-F 2 "custom-footprints:D2F-L2" H 10550 4600 50  0001 C CNN
+F 2 "solarpcb:D2F-L2-2" H 10550 4600 50  0001 C CNN
 F 3 "~" H 10550 4600 50  0001 C CNN
 	1    10550 4600
 	1    0    0    -1  
@@ -491,12 +491,12 @@ Wire Wire Line
 Text GLabel 10900 5250 2    50   Output ~ 0
 BATT_N
 $Comp
-L Switch:SW_SPDT U4
+L solarpcd-rescue:SW_SPDT-Switch U4
 U 1 1 5DCB22FF
 P 10550 5150
 F 0 "U4" H 10550 5435 50  0000 C CNN
 F 1 "SW_SPDT" H 10550 5344 50  0000 C CNN
-F 2 "custom-footprints:D2F-L2" H 10550 5150 50  0001 C CNN
+F 2 "solarpcb:D2F-L2" H 10550 5150 50  0001 C CNN
 F 3 "~" H 10550 5150 50  0001 C CNN
 	1    10550 5150
 	1    0    0    -1  
@@ -504,7 +504,7 @@ $EndComp
 Wire Wire Line
 	10900 5250 10750 5250
 $Comp
-L Connector:Screw_Terminal_01x02 J3
+L solarpcd-rescue:Screw_Terminal_01x02-Connector J3
 U 1 1 5DCDAA1F
 P 10000 4900
 F 0 "J3" H 10000 4700 50  0000 C CNN
