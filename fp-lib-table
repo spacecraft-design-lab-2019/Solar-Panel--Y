@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SolarCellX)(type KiCad)(uri ${KIPRJMOD}/Footprints/SolarCellX.pretty)(options "")(descr ""))
+  (lib (name solarpcb)(type KiCad)(uri ${KIPRJMOD}/solarpcb.pretty)(options "")(descr ""))
+)
