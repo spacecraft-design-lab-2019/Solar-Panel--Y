@@ -1,7 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ypanel-cache
-LIBS:SolarCellX_v3-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -365,7 +364,7 @@ Wire Wire Line
 	14200 3500 14650 3500
 Connection ~ 14650 3500
 $Comp
-L Connector:TestPoint TP1
+L ypanel-rescue:TestPoint-Connector TP1
 U 1 1 5DF6B470
 P 9300 8450
 F 0 "TP1" H 9358 8568 50  0000 L CNN
@@ -376,7 +375,7 @@ F 3 "~" H 9500 8450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L ypanel-rescue:TestPoint-Connector TP2
 U 1 1 5DF6BC79
 P 9550 8450
 F 0 "TP2" H 9608 8568 50  0000 L CNN
@@ -387,7 +386,7 @@ F 3 "~" H 9750 8450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L ypanel-rescue:TestPoint-Connector TP3
 U 1 1 5DF6BF17
 P 9800 8450
 F 0 "TP3" H 9858 8568 50  0000 L CNN
@@ -701,7 +700,7 @@ BQ25570RGRR
 Text Notes 4900 1650 0    100  ~ 0
 Energy Harvesting IC
 $Comp
-L power:GND #PWR0101
+L ypanel-rescue:GND-power #PWR0101
 U 1 1 5E4393E8
 P 7150 4550
 F 0 "#PWR0101" H 7150 4300 50  0001 C CNN
@@ -712,7 +711,7 @@ F 3 "" H 7150 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L ypanel-rescue:GND-power #PWR0102
 U 1 1 5E4393EE
 P 3700 5200
 F 0 "#PWR0102" H 3700 4950 50  0001 C CNN
@@ -726,7 +725,7 @@ Connection ~ 3700 5200
 Wire Wire Line
 	3700 5200 4200 5200
 $Comp
-L power:GND #PWR0103
+L ypanel-rescue:GND-power #PWR0103
 U 1 1 5E4393F6
 P 3350 3150
 F 0 "#PWR0103" H 3350 2900 50  0001 C CNN
@@ -737,7 +736,7 @@ F 3 "" H 3350 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L ypanel-rescue:GND-power #PWR0104
 U 1 1 5E4393FC
 P 8000 2050
 F 0 "#PWR0104" H 8000 1800 50  0001 C CNN
@@ -748,7 +747,7 @@ F 3 "" H 8000 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L ypanel-rescue:GND-power #PWR0105
 U 1 1 5E439402
 P 7950 3600
 F 0 "#PWR0105" H 7950 3350 50  0001 C CNN
@@ -759,7 +758,7 @@ F 3 "" H 7950 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0106
+L ypanel-rescue:GND-power #PWR0106
 U 1 1 5E439408
 P 8700 2850
 F 0 "#PWR0106" H 8700 2600 50  0001 C CNN
@@ -784,7 +783,7 @@ VOUT_EN
 Wire Wire Line
 	1900 3850 2150 3850
 $Comp
-L power:GND #PWR0107
+L ypanel-rescue:GND-power #PWR0107
 U 1 1 5E439415
 P 2150 4250
 F 0 "#PWR0107" H 2150 4000 50  0001 C CNN
@@ -816,7 +815,7 @@ VSOLAR
 Text Notes 6600 1750 0    70   ~ 0
 MPPT Set Resistors 
 $Comp
-L SolarCellX_v3-rescue:4.7UF0603-misc-circuits-cache-misc-circuits-rescue C3
+L ypanel-rescue:4.7UF0603-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C3
 U 1 1 5E439426
 P 3700 2850
 F 0 "C3" H 3808 2961 70  0000 L CNN
@@ -827,7 +826,7 @@ F 3 "" H 3700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue C2
+L ypanel-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C2
 U 1 1 5E439434
 P 3350 2850
 F 0 "C2" H 3458 2961 70  0000 L CNN
@@ -838,7 +837,7 @@ F 3 "" H 3350 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:10NF-0603-50V-10%-misc-circuits-cache-misc-circuits-rescue C4
+L ypanel-rescue:10NF-0603-50V-10%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C4
 U 1 1 5E43943B
 P 4050 2850
 F 0 "C4" H 4158 2961 70  0000 L CNN
@@ -849,7 +848,7 @@ F 3 "" H 4050 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:22UF-0805-6.3V-20%-misc-circuits-cache-misc-circuits-rescue C7
+L ypanel-rescue:22UF-0805-6.3V-20%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C7
 U 1 1 5E439442
 P 7950 3350
 F 0 "C7" H 8058 3461 70  0000 L CNN
@@ -860,7 +859,7 @@ F 3 "" H 7950 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:DIODE-SOD523-misc-circuits-cache-misc-circuits-rescue D1
+L ypanel-rescue:DIODE-SOD523-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue D1
 U 1 1 5E439449
 P 3000 2800
 F 0 "D1" H 2950 2619 59  0000 L BNN
@@ -871,7 +870,7 @@ F 3 "" H 3000 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:BQ25570RGRR-misc-circuits-cache-misc-circuits-rescue U2
+L ypanel-rescue:BQ25570RGRR-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue U2
 U 1 1 5E439450
 P 6050 3450
 F 0 "U2" H 6014 3159 69  0000 L BNN
@@ -882,7 +881,7 @@ F 3 "" H 6050 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R14
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R14
 U 1 1 5E43946C
 P 7700 4050
 F 0 "R14" H 7700 4110 70  0000 C BNN
@@ -893,7 +892,7 @@ F 3 "" H 7700 4050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue C6
+L ypanel-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C6
 U 1 1 5E439473
 P 7150 3850
 F 0 "C6" H 7258 3961 70  0000 L CNN
@@ -904,7 +903,7 @@ F 3 "" H 7150 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R13
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R13
 U 1 1 5E43947A
 P 7450 2550
 F 0 "R13" H 7450 2610 70  0000 C BNN
@@ -915,7 +914,7 @@ F 3 "" H 7450 2550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:4.7UF0603-misc-circuits-cache-misc-circuits-rescue C8
+L ypanel-rescue:4.7UF0603-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C8
 U 1 1 5E439481
 P 8000 2650
 F 0 "C8" H 8108 2761 70  0000 L CNN
@@ -926,7 +925,7 @@ F 3 "" H 8000 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue C9
+L ypanel-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C9
 U 1 1 5E439488
 P 8350 2650
 F 0 "C9" H 8458 2761 70  0000 L CNN
@@ -937,7 +936,7 @@ F 3 "" H 8350 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue C11
+L ypanel-rescue:0.1UF-0603-25V-(+80_-20%)-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C11
 U 1 1 5E43948F
 P 8700 2650
 F 0 "C11" H 8808 2761 70  0000 L CNN
@@ -948,7 +947,7 @@ F 3 "" H 8700 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R12
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R12
 U 1 1 5E439497
 P 7450 2000
 F 0 "R12" H 7450 2060 70  0000 C BNN
@@ -960,7 +959,7 @@ F 4 "DNI" H 7450 2000 50  0001 C CNN "DNI"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R11
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R11
 U 1 1 5E43949F
 P 6750 2000
 F 0 "R11" H 6750 2060 70  0000 C BNN
@@ -972,7 +971,7 @@ F 4 "DNI" H 6750 2000 50  0001 C CNN "DNI"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R5
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R5
 U 1 1 5E4394A6
 P 4200 4500
 F 0 "R5" H 4200 4560 70  0000 C BNN
@@ -983,7 +982,7 @@ F 3 "" H 4200 4500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R8
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R8
 U 1 1 5E4394AD
 P 4800 4500
 F 0 "R8" H 4800 4560 70  0000 C BNN
@@ -994,7 +993,7 @@ F 3 "" H 4800 4500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R6
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R6
 U 1 1 5E4394B4
 P 4200 5000
 F 0 "R6" H 4200 5060 70  0000 C BNN
@@ -1005,7 +1004,7 @@ F 3 "" H 4200 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R7
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R7
 U 1 1 5E4394BB
 P 4800 5000
 F 0 "R7" H 4800 5060 70  0000 C BNN
@@ -1016,7 +1015,7 @@ F 3 "" H 4800 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R4
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R4
 U 1 1 5E4394C2
 P 4200 4000
 F 0 "R4" H 4200 4060 70  0000 C BNN
@@ -1027,7 +1026,7 @@ F 3 "" H 4200 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:COILCRAFT-LPS4018-misc-circuits-cache-misc-circuits-rescue L1
+L ypanel-rescue:COILCRAFT-LPS4018-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue L1
 U 1 1 5E4394C9
 P 4650 2450
 F 0 "L1" V 4800 2400 59  0000 L BNN
@@ -1038,7 +1037,7 @@ F 3 "" H 4650 2450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:COILCRAFT-LPS4018-misc-circuits-cache-misc-circuits-rescue L2
+L ypanel-rescue:COILCRAFT-LPS4018-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue L2
 U 1 1 5E4394D0
 P 7500 3150
 F 0 "L2" V 7450 3150 59  0000 L BNN
@@ -1049,7 +1048,7 @@ F 3 "" H 7500 3150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R3
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R3
 U 1 1 5E4394D7
 P 3550 4800
 F 0 "R3" H 3550 4860 70  0000 C BNN
@@ -1060,7 +1059,7 @@ F 3 "" H 3550 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue R2
+L ypanel-rescue:1MOHM-0603-1_4W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R2
 U 1 1 5E4394DE
 P 3550 4300
 F 0 "R2" H 3550 4360 70  0000 C BNN
@@ -1071,7 +1070,7 @@ F 3 "" H 3550 4300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:1.0UF-0603-16V-10%-misc-circuits-cache-misc-circuits-rescue C1
+L ypanel-rescue:1.0UF-0603-16V-10%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue C1
 U 1 1 5E4394E5
 P 2150 4150
 F 0 "C1" H 2258 4261 70  0000 L CNN
@@ -1082,7 +1081,7 @@ F 3 "" H 2150 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R1
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R1
 U 1 1 5E4394EC
 P 2350 3850
 F 0 "R1" H 2350 3600 70  0000 C CNN
@@ -1093,7 +1092,7 @@ F 3 "" H 2350 3850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R15
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R15
 U 1 1 5E4394F3
 P 7700 4350
 F 0 "R15" H 7700 4410 70  0000 C BNN
@@ -1104,7 +1103,7 @@ F 3 "" H 7700 4350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR0109
+L ypanel-rescue:+3V3-power #PWR0109
 U 1 1 5E4394FA
 P 10300 3000
 F 0 "#PWR0109" H 10300 2850 50  0001 C CNN
@@ -1117,7 +1116,7 @@ $EndComp
 Wire Wire Line
 	10300 3150 10300 3000
 $Comp
-L SolarCellX_v3-rescue:MSS1P4-M3_89A-symbols D2
+L ypanel-rescue:MSS1P4-M3_89A-symbols-SolarCellX_v3-rescue D2
 U 1 1 5E43950B
 P 9700 3150
 F 0 "D2" H 10000 2885 50  0000 C CNN
@@ -1140,7 +1139,7 @@ $EndComp
 Text Notes 7400 1850 0    50   ~ 0
 DNI
 $Comp
-L SolarCellX_v3-rescue:SolarCell_Small-SolarCellParts SC?
+L ypanel-rescue:SolarCell_Small-SolarCellParts-SolarCellX_v3-rescue SC?
 U 1 1 5E443D53
 P 2000 8900
 AR Path="/5E43823D/5E443D53" Ref="SC?"  Part="1" 
@@ -1153,7 +1152,7 @@ F 3 "" V 2200 8900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:SolarCell_Small-SolarCellParts SC?
+L ypanel-rescue:SolarCell_Small-SolarCellParts-SolarCellX_v3-rescue SC?
 U 1 1 5E443D5A
 P 2000 9650
 AR Path="/5E43823D/5E443D5A" Ref="SC?"  Part="1" 
@@ -1166,7 +1165,7 @@ F 3 "" V 2200 9650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:SolarCell_Small-SolarCellParts SC?
+L ypanel-rescue:SolarCell_Small-SolarCellParts-SolarCellX_v3-rescue SC?
 U 1 1 5E443D61
 P 2000 10400
 AR Path="/5E43823D/5E443D61" Ref="SC?"  Part="1" 
@@ -1179,7 +1178,7 @@ F 3 "" V 2200 10400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:SBDiode-SolarCellParts D?
+L ypanel-rescue:SBDiode-SolarCellParts-SolarCellX_v3-rescue D?
 U 1 1 5E443D76
 P 2100 8150
 AR Path="/5E43823D/5E443D76" Ref="D?"  Part="1" 
@@ -1192,7 +1191,7 @@ F 3 "" H 2040 8270 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:SBDiode-SolarCellParts D?
+L ypanel-rescue:SBDiode-SolarCellParts-SolarCellX_v3-rescue D?
 U 1 1 5E443D7D
 P 4050 8150
 AR Path="/5E43823D/5E443D7D" Ref="D?"  Part="1" 
@@ -1218,7 +1217,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 9650 2650 10400
 $Comp
-L power:GND #PWR?
+L ypanel-rescue:GND-power #PWR?
 U 1 1 5E443DA6
 P 1250 9650
 AR Path="/5E43823D/5E443DA6" Ref="#PWR?"  Part="1" 
@@ -1236,7 +1235,7 @@ Connection ~ 1350 9650
 Wire Wire Line
 	1350 10400 1350 9650
 $Comp
-L SolarCellX_v3-rescue:SolarCell_Small-SolarCellParts SC?
+L ypanel-rescue:SolarCell_Small-SolarCellParts-SolarCellX_v3-rescue SC?
 U 1 1 5E443DB5
 P 4000 10400
 AR Path="/5E43823D/5E443DB5" Ref="SC?"  Part="1" 
@@ -1249,7 +1248,7 @@ F 3 "" V 4200 10400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:SolarCell_Small-SolarCellParts SC?
+L ypanel-rescue:SolarCell_Small-SolarCellParts-SolarCellX_v3-rescue SC?
 U 1 1 5E443DBC
 P 4000 9650
 AR Path="/5E43823D/5E443DBC" Ref="SC?"  Part="1" 
@@ -1262,7 +1261,7 @@ F 3 "" V 4200 9650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:SolarCell_Small-SolarCellParts SC?
+L ypanel-rescue:SolarCell_Small-SolarCellParts-SolarCellX_v3-rescue SC?
 U 1 1 5E443DC3
 P 4000 8900
 AR Path="/5E43823D/5E443DC3" Ref="SC?"  Part="1" 
@@ -1275,7 +1274,7 @@ F 3 "" V 4200 8900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:MSS1P4-M3_89A-symbols D?
+L ypanel-rescue:MSS1P4-M3_89A-symbols-SolarCellX_v3-rescue D?
 U 1 1 5E443DD4
 P 5000 8550
 AR Path="/5E43823D/5E443DD4" Ref="D?"  Part="1" 
@@ -1306,7 +1305,7 @@ Wire Wire Line
 Text Label 4650 8150 0    50   ~ 0
 VSOLAR_FULL
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R?
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R?
 U 1 1 5E45C982
 P 13350 2100
 AR Path="/5E43823D/5E45C982" Ref="R?"  Part="1" 
@@ -1319,7 +1318,7 @@ F 3 "" H 13350 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R?
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R?
 U 1 1 5E45C989
 P 13350 1700
 AR Path="/5E43823D/5E45C989" Ref="R?"  Part="1" 
@@ -1347,7 +1346,7 @@ Wire Wire Line
 Text GLabel 15350 1900 2    50   BiDi ~ 0
 COIL_N
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R?
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R?
 U 1 1 5E45C998
 P 15200 2100
 AR Path="/5E43823D/5E45C998" Ref="R?"  Part="1" 
@@ -1360,7 +1359,7 @@ F 3 "" H 15200 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SolarCellX_v3-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue R?
+L ypanel-rescue:0OHM-0603-1_10W-5%-misc-circuits-cache-misc-circuits-rescue-SolarCellX_v3-rescue R?
 U 1 1 5E45C99F
 P 15200 1700
 AR Path="/5E43823D/5E45C99F" Ref="R?"  Part="1" 
