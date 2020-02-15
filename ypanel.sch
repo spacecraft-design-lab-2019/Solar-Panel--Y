@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ypanel_lib:SWLP.12.B U1
-U 1 1 5DB14A86
-P 7250 8900
-F 0 "U1" H 7528 8996 50  0000 L CNN
-F 1 "SWLP.12.B" H 7528 8905 50  0000 L CNN
-F 2 "custom-footprints:SWLP-12-B" H 7528 8814 50  0000 L CNN
-F 3 "" H 7250 8900 50  0001 C CNN
-	1    7250 8900
-	0    -1   1    0   
-$EndComp
-$Comp
 L ypanel-rescue:XF2M-1015-1A-symbols-misc-circuits-rescue J1
 U 1 1 5E43703A
 P 12150 3600
@@ -214,60 +203,6 @@ Wire Wire Line
 	11650 3900 12150 3900
 Wire Wire Line
 	13050 3900 13600 3900
-$Comp
-L ypanel-rescue:U.FL-R-SMT-1-symbols J2
-U 1 1 5DC33039
-P 6950 8300
-F 0 "J2" H 6842 8565 50  0000 C CNN
-F 1 "U.FL-R-SMT-1" H 6842 8474 50  0000 C CNN
-F 2 "custom-footprints:U.FL-R-SMT-1" H 6650 8550 50  0001 L CNN
-F 3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" H 6650 8450 50  0001 L CNN
-F 4 "Hirose" H 6650 8150 50  0001 L CNN "Manufacturer_Name"
-F 5 "U.FL-R-SMT-1" H 6650 8050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6950 8300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 8300 7350 8600
-Wire Wire Line
-	7150 8600 7000 8600
-Wire Wire Line
-	7000 9000 7000 8950
-Connection ~ 7000 8600
-Wire Wire Line
-	7000 8600 6850 8600
-Connection ~ 7000 8700
-Wire Wire Line
-	7000 8700 7000 8600
-Connection ~ 7000 8750
-Wire Wire Line
-	7000 8750 7000 8700
-Connection ~ 7000 8800
-Wire Wire Line
-	7000 8800 7000 8750
-Connection ~ 7000 8850
-Wire Wire Line
-	7000 8850 7000 8800
-Connection ~ 7000 8900
-Wire Wire Line
-	7000 8900 7000 8850
-Connection ~ 7000 8950
-Wire Wire Line
-	7000 8950 7000 8900
-$Comp
-L ypanel-rescue:GND-power #PWR0115
-U 1 1 5DC4B261
-P 6800 9000
-F 0 "#PWR0115" H 6800 8750 50  0001 C CNN
-F 1 "GND" H 6805 8827 50  0000 C CNN
-F 2 "" H 6800 9000 50  0001 C CNN
-F 3 "" H 6800 9000 50  0001 C CNN
-	1    6800 9000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 9000 7000 9000
-Connection ~ 7000 9000
 Wire Wire Line
 	12000 4000 12150 4000
 Text GLabel 12000 4000 0    50   BiDi ~ 0
@@ -1424,4 +1359,92 @@ Wire Wire Line
 Connection ~ 1840 8150
 Wire Wire Line
 	1840 8150 1850 8150
+$Comp
+L Device:Antenna AE1
+U 1 1 5E47036D
+P 8350 8300
+F 0 "AE1" H 8430 8289 50  0000 L CNN
+F 1 "SXP.18.4.A.02" H 8430 8198 50  0000 L CNN
+F 2 "ypanel:SXP.18.4.A.02" H 8350 8300 50  0001 C CNN
+F 3 "~" H 8350 8300 50  0001 C CNN
+	1    8350 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 5E48B702
+P 8050 8500
+F 0 "L3" H 8102 8546 50  0000 L CNN
+F 1 "TBD" H 8102 8455 50  0000 L CNN
+F 2 "Inductor_SMD:L_0201_0603Metric" H 8050 8500 50  0001 C CNN
+F 3 "~" H 8050 8500 50  0001 C CNN
+	1    8050 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5E48D592
+P 7900 8650
+F 0 "C12" H 8015 8696 50  0000 L CNN
+F 1 "TBD" H 8015 8605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 7938 8500 50  0001 C CNN
+F 3 "~" H 7900 8650 50  0001 C CNN
+	1    7900 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5E48F12E
+P 8200 8650
+F 0 "C13" H 8315 8696 50  0000 L CNN
+F 1 "TBD" H 8315 8605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8238 8500 50  0001 C CNN
+F 3 "~" H 8200 8650 50  0001 C CNN
+	1    8200 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5E49C20B
+P 7550 8500
+F 0 "J2" H 7650 8475 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7650 8384 50  0000 L CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 7550 8500 50  0001 C CNN
+F 3 " ~" H 7550 8500 50  0001 C CNN
+	1    7550 8500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 8500 8350 8500
+Wire Wire Line
+	7750 8500 7900 8500
+Connection ~ 7900 8500
+Wire Wire Line
+	8200 8800 7900 8800
+$Comp
+L ypanel-rescue:GND-power #GND0101
+U 1 1 5E4E54D7
+P 7550 8800
+F 0 "#GND0101" H 7638 8763 50  0000 L CNN
+F 1 "GND-power" H 7555 8627 50  0001 C CNN
+F 2 "" H 7550 8800 50  0001 C CNN
+F 3 "" H 7550 8800 50  0001 C CNN
+	1    7550 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 8700 7550 8800
+Wire Wire Line
+	7900 8800 7550 8800
+Connection ~ 7900 8800
+Connection ~ 7550 8800
+Wire Notes Line
+	7800 8450 7800 8900
+Wire Notes Line
+	7800 8900 8300 8900
+Wire Notes Line
+	8300 8900 8300 8450
+Wire Notes Line
+	8300 8450 7800 8450
+Connection ~ 8200 8500
 $EndSCHEMATC

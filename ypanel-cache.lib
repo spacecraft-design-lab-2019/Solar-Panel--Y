@@ -1,6 +1,86 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Conn_Coaxial
+#
+DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Antenna
+#
+DEF Device_Antenna AE 0 40 N N 1 F N
+F0 "AE" -75 75 50 H V R CNN
+F1 "Device_Antenna" -75 0 50 H V R CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 10 0 100 0 -150 N
+P 3 0 1 10 50 100 0 -100 -50 100 N
+X A 1 0 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L
+#
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # ypanel-rescue_+3V3-power
 #
 DEF ypanel-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
@@ -439,23 +519,6 @@ X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ypanel-rescue_U.FL-R-SMT-1-symbols
-#
-DEF ypanel-rescue_U.FL-R-SMT-1-symbols J 0 30 Y Y 1 F N
-F0 "J" -300 450 50 H V L CNN
-F1 "ypanel-rescue_U.FL-R-SMT-1-symbols" -300 350 50 H V L CNN
-F2 "U.FL-R-SMT-1" -300 250 50 H I L CNN
-F3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" -300 150 50 H I L CNN
-F4 "Hirose" -300 -150 50 H I L CNN "Manufacturer_Name"
-F5 "U.FL-R-SMT-1" -300 -250 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-P 5 0 1 6 -200 100 200 100 200 -100 -200 -100 -200 100 N
-X GND 1 100 -300 200 U 50 50 0 0 U
-X 2 2 100 -300 200 U 50 50 0 0 U N
-X ANT 3 -400 0 200 R 50 50 0 0 U
-ENDDRAW
-ENDDEF
-#
 # ypanel-rescue_XF2M-1015-1A-symbols-misc-circuits-rescue
 #
 DEF ypanel-rescue_XF2M-1015-1A-symbols-misc-circuits-rescue J 0 30 Y Y 1 F N
@@ -484,27 +547,6 @@ X 6 6 900 -200 200 L 50 50 0 0 B
 X 7 7 0 -300 200 R 50 50 0 0 B
 X 8 8 900 -300 200 L 50 50 0 0 B
 X 9 9 0 -400 200 R 50 50 0 0 B
-ENDDRAW
-ENDDEF
-#
-# ypanel_lib_SWLP.12.B
-#
-DEF ypanel_lib_SWLP.12.B U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "ypanel_lib_SWLP.12.B" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -200 150 250 -150 0 1 0 N
-X ~ 1 -200 250 100 D 50 50 1 1 w
-X ~ 2 -150 250 100 D 50 50 1 1 w
-X ~ 3 -100 250 100 D 50 50 1 1 w
-X ~ 4 -50 250 100 D 50 50 1 1 w
-X ~ 5 0 250 100 D 50 50 1 1 w
-X ~ 6 50 250 100 D 50 50 1 1 w
-X ~ 7 100 250 100 D 50 50 1 1 w
-X sig 8 -300 -100 100 R 50 50 1 1 O
-X gnd 9 -300 100 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
