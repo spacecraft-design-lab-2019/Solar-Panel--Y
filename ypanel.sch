@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ypanel-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1365,7 +1365,7 @@ U 1 1 5E47036D
 P 8350 8300
 F 0 "AE1" H 8430 8289 50  0000 L CNN
 F 1 "SXP.18.4.A.02" H 8430 8198 50  0000 L CNN
-F 2 "ypanel:SXP.18.4.A.02" H 8350 8300 50  0001 C CNN
+F 2 "spacecraft-footprints:SXP.18.4.A.02" H 8350 8300 50  0001 C CNN
 F 3 "~" H 8350 8300 50  0001 C CNN
 	1    8350 8300
 	1    0    0    -1  
