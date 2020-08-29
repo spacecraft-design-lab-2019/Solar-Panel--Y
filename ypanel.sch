@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ypanel-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1360,50 +1359,6 @@ Connection ~ 1840 8150
 Wire Wire Line
 	1840 8150 1850 8150
 $Comp
-L Device:Antenna AE1
-U 1 1 5E47036D
-P 8350 8300
-F 0 "AE1" H 8430 8289 50  0000 L CNN
-F 1 "SXP.18.4.A.02" H 8430 8198 50  0000 L CNN
-F 2 "spacecraft-footprints:SXP.18.4.A.02" H 8350 8300 50  0001 C CNN
-F 3 "~" H 8350 8300 50  0001 C CNN
-	1    8350 8300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L3
-U 1 1 5E48B702
-P 8050 8500
-F 0 "L3" H 8102 8546 50  0000 L CNN
-F 1 "TBD" H 8102 8455 50  0000 L CNN
-F 2 "Inductor_SMD:L_0201_0603Metric" H 8050 8500 50  0001 C CNN
-F 3 "~" H 8050 8500 50  0001 C CNN
-	1    8050 8500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5E48D592
-P 7900 8650
-F 0 "C12" H 8015 8696 50  0000 L CNN
-F 1 "TBD" H 8015 8605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 7938 8500 50  0001 C CNN
-F 3 "~" H 7900 8650 50  0001 C CNN
-	1    7900 8650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 5E48F12E
-P 8200 8650
-F 0 "C13" H 8315 8696 50  0000 L CNN
-F 1 "TBD" H 8315 8605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 8238 8500 50  0001 C CNN
-F 3 "~" H 8200 8650 50  0001 C CNN
-	1    8200 8650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_Coaxial J2
 U 1 1 5E49C20B
 P 7550 8500
@@ -1414,13 +1369,6 @@ F 3 " ~" H 7550 8500 50  0001 C CNN
 	1    7550 8500
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 8500 8350 8500
-Wire Wire Line
-	7750 8500 7900 8500
-Connection ~ 7900 8500
-Wire Wire Line
-	8200 8800 7900 8800
 $Comp
 L ypanel-rescue:GND-power #GND0101
 U 1 1 5E4E54D7
@@ -1435,16 +1383,16 @@ $EndComp
 Wire Wire Line
 	7550 8700 7550 8800
 Wire Wire Line
-	7900 8800 7550 8800
-Connection ~ 7900 8800
-Connection ~ 7550 8800
-Wire Notes Line
-	7800 8450 7800 8900
-Wire Notes Line
-	7800 8900 8300 8900
-Wire Notes Line
-	8300 8900 8300 8450
-Wire Notes Line
-	8300 8450 7800 8450
-Connection ~ 8200 8500
+	7750 8500 7900 8500
+$Comp
+L Device:Antenna AE1
+U 1 1 5E47036D
+P 7900 8300
+F 0 "AE1" H 7980 8289 50  0000 L CNN
+F 1 "SXP.18.4.A.02" H 7980 8198 50  0000 L CNN
+F 2 "spacecraft-footprints:SXP.18.4.A.02" H 7900 8300 50  0001 C CNN
+F 3 "~" H 7900 8300 50  0001 C CNN
+	1    7900 8300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
